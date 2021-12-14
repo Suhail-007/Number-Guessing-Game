@@ -106,4 +106,3 @@ if (play) {
 		gameRecord(userGuessNumber);
 		});
 }
-console.log(randomNumber)
