@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css"/>
+		<script src="app.js" defer></script>
+		<title>Number Guessing Game</title>
+</head>
+<body>
+		<div class="container">
+				<h1>Number Guessing Game</h1>
+				<h5>Guess the number between 0-100 in 10 Turns</h5>
+				<div class="child-1">
+						<form>
+								<label for="guess">Guess The Correct Number</label>
+								<input id="guess" type="text" placeholder="Type number here..." autofocus>
+								<input id="submit-Btn" type="submit" value="Submit Guess">
+						</form>
+			 </div><!-- child 1 -->
+				
+				<div data-output-div class="child-2">
+						<p id="previous-guess" class="guess">Previous Guesses:</p>
+				 	<p data-tries class="tries-left">Tries Left:</p>
+						<p data-highLow class="high-and-low"></p>
+				</div>
+		</div><!-- container -->
+</body>
+</html>

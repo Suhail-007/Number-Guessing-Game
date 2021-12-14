@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Gwendolyn:wght@700&display=swap');
+
+*, *::before, *::after {
+		box-sizing: border-box;
+}
+
+body {
+		margin: 0;
+		user-select: none;
+		webkit-user-select: none;
+		height: 100vh;
+		width: 100vw;
+		background: #eaeaff;
+}
+
+.container {
+		display: flex;
+		flex-direction: column;
+		padding: 7vw;
+		text-align: center;
+		background: #eaeaff;
+		min-height: 50%;
+}
+
+.container h1 {
+		font-family: 'Fuzzy Bubbles', cursive;
+		margin: 0;
+		font-size: 9vw;
+}
+
+.container h1 + h5 {
+		font-family: 'Times New Roman', sans serif;
+		font-size: 1em;
+}
+
+.container h1 + h5 ~ div > form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background: white;
+		padding: 10vw 2vw;
+		border-radius: 1vw;
+		font-family: 'Fuzzy Bubbles', cursive;
+		box-shadow:  1px 0px 5px 5px #eaeaff, inset 0px 1px 5px 7px #eaeaff, inset -1px 0px 5px 5px rgba(0,0,0,0.8), inset 0px -1px 5px 5px #eaeaff;
+}
+
+.container h1 + h5 ~ div > form > label {
+		margin-bottom: 2em;
+		font-size: 4vw;
+}
+
+input[placeholder] {
+		font-size: 3.5vw;
+		width: 70%;
+		min-height: 60%;
+		outline: none;
+		padding: 1vw 2vw;
+}
+
+input[type="text"] {
+		margin-bottom: 3em;
+}
+
+input[type="submit"],
+button {
+		background: none;
+		border: none;
+		outline: none;
+		border-radius: 10vw;
+		cursor: pointer;
+		padding: 2vw;
+		font-size: 3.5vw;
+		background-color: #ffdfd5;
+		transition: transform 200ms ease-in-out;
+		box-shadow: 1px 0px 2px 0px rgba(0,0,0,0.5), 0px 0px 0px 0px;
+}
+
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+		transform: scale(1.1);
+}
+
+.container h1 + h5 ~ div ~ div {
+		margin-top: 1em;
+		padding: 1em;
+}
+
+#previous-guess {
+		font-size: 4.5vw;
+}
+
+p[data-tries] {
+		font-size: 4vw;
+		color: red;
+}
+
+p[data-highLow] {
+		font-size: 6vw;
+}
